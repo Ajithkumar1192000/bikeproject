@@ -1,0 +1,95 @@
+<html>
+    <head>
+
+        <title>login page</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            h1{
+                text-transform: uppercase;
+                margin-top: 30px;
+                margin-left: 290px;
+                font-weight: 300;
+                font-family: cursive;
+                text-shadow: 2px 2px 2px;
+            }
+            .container{
+                width: 100vh;
+                height: 500px;
+                margin-top: 50px;
+                margin-left: 300px;
+            }
+            .label{
+                text-transform: uppercase;
+                font-weight: 300;
+                font-family: cursive;
+                text-shadow: 2px 2px 2px;
+                margin-left: 40px;
+                
+            }
+            .a1{
+                margin-left: 50px;
+            }
+        </style>
+        <script>
+            function validation(){
+           
+                let email=document.getElementById("email").value;
+                var x=/^[a-zA-Z0-9.#$%&'+/=?_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+if(email.match(x))
+{
+    alert("provided email is valid");
+
+}
+else {
+
+    alert("invalid email ");
+}
+let pass=document.getElementById("password").value;
+var y='123';
+if(pass.match(y)){
+    alert("you password id correct");
+}
+else
+{
+    alert("your password is incorrect");
+}
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>user login</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+<center>
+    <div class="a1">
+<label class="label">email</label>
+<br>
+<br>
+<input type="text" placeholder="enter your mail id"id="email">
+<br>
+<br>
+<label class="label">password</label>
+<br>
+<br>
+<input type="password"placeholder="enter your password"id="password">
+<br>
+<br>
+<button id="validation" value="validation"onclick="validation()">validation</button>
+<br>
+<br>
+<a href="forget_password.html">forgetpassword</a>
+<br>
+<br> 
+<a href="index.html">back to homepage</a>
+</center>
+
+</div>
+        </div>
+    </body>
+</html>
